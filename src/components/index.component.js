@@ -10,6 +10,7 @@ export default class Index extends Component {
       super(props);
       this.state = {pessoa: []};
     }
+    
     componentDidMount(){
       axios.get('http://localhost:4000/pessoa')
         .then(response => {
